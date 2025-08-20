@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Calculadora</title>
+    <style>
+      body{
+        background-image: url(background.jpg);
+        background-size: cover;
+        
+      }
+      button{
+        font-size: 50px !important;
+        font-weight: bolder !important;     
+      }
+      
+    </style>
+  </head>
+  <body onload="limpar()">
+    <div class="container mt-5">
+        <div class="card bg-dark text-white">
+            <div class="card-header text-center">
+                Calculadora
+            </div>
+            <div class="card-body">
+              <div class="row mt-2">
+                <div class="cols-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <label for="nr_1">Número 1</label><br>
+                  <input class="form-control" type="number" id="nr_1">
+                </div>
+                <div class="cols-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <label for="nr_2">Número 2</label><br>
+                  <input class="form-control" type="number" id="nr_2">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <label for="resultado">Resultado</label><br>
+                  <input class="form-control" type="number" id="resultado" readonly>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 ">
+                  <button class="btn btn-lg btn-danger mb-2 w-100" onclick="somar();">+</button>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btn btn-lg btn-warning mb-2 w-100" onclick="subtrair();">-</button>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btn btn-lg btn-primary mb-2 w-100" onclick="multiplicar();">x</button>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btn btn-lg btn-success mb-2 w-100" onclick="dividir();">/</button>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btn btn-lg btn-success mb-2 w-100 text-center" onclick="potencia();">P</button>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <button class="btn btn-lg btn-success mb-2 w-100 text-center"onclick="raiz();"><img src="raiz.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+                <p>&copy;2023 - por Ageu S.R.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="operacoes.js"></script>
+  </body>
+</html>
