@@ -1,0 +1,41 @@
+body{
+    background-color: dimgray;
+    padding: 0px;
+    margin: 0px;
+    height: 1800px;
+    width: 2000px;
+}
+
+.pai{
+    width: 350px;
+    height: 350px;
+    background-color: magenta;
+    /*position: static; posicionamento para ser utilizado com padrão segue o fluxo normal dos elementos HTML.*/
+    /*position: fixed; posicionamento que define a posição do (s) elemento(HTMl) como fixo. Isto é por mais que a página seja movimentada o elemento não tem posição.*/
+    /*position: sticky; posicionamento que utiliza como referência um valor no topo, esquerda,direita ou na base para fixar um elemento HTML.*/
+    /*position: relative;posicionamento que utiliza a posição inicial do HTML*/
+    position: static;
+    margin-top: 100px;
+    margin-left: 50px;
+    /*right: 50px;*/
+}
+
+.filho{
+    width: 160px;
+    height: 160px;
+    background-color: yellow;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    /*position:absolute; Aplica-se a elementos filhos que tenham um elemento pai com um posicionamento estático, nessa situação o elemento filho pega como referência o topo e o lado esquerdo da página para se posicionar. Quando o elemento pai tem o posicionamento diferente do estatico a referencia é o topo e a esquerda do elemento pai.*/
+
+}
+
+/*.relativo{
+    width: 150px;
+    height: 150px;
+    background-color:aqua ;
+    position: relative;
+    top: 250px;
+
+}*/

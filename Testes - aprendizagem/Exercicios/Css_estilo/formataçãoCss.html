@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title> Formatação CSS</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <style type="text/css">
+
+
+            /*
+                Tamanhos de texto!
+                PX -> Tamanho fixo, não varia.
+                %  -> Tamanho Relativo ao tamanho padrão do navegador.
+                em -> Tamanho Relativo ao container pai
+            */
+            body{
+                font-size: 20px;
+            }
+            div{/*container PAI*/
+                font-size: 20px;
+            }
+            .textoA{
+                font-size: 1em;
+            }
+            .textoB{
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span class="textoA">Esse texto está formatado com CSS!</span>
+            <br>
+            <span class="textoB">Esse texto está formatado com CSS!</span>
+        </div>
+        
+        <div class="formatacao">
+            <p>
+                Esse texto foi formatado com folha de estilo externa B!
+            </p>
+        </div>
+
+
+
+
+    </body>
+</html>

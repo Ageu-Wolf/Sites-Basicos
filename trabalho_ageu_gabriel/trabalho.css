@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(imagens/pngtree-abstract-modern-neon-frame-background-image_339537.jpg);
+    background-size: cover;
+  }
+
+  #menu {
+    background-color: lightgray;
+    position: absolute;
+    padding-bottom: 50px;
+  }
+
+  #conteudo {
+    padding-top: 1px;
+    /*margem interna*/
+    padding-bottom: 7px;
+    /*margem parte de baixo*/
+  }
+
+  #rodape {
+      justify-content: center;
+      text-align: center;
+      position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    /*retira o sublinhado*/
+    color: black;
+  }
+
+  #menu a:link,
+  #menu a:visited {
+    color: black;
+    padding: 8px 12px;
+  }
+
+  #menu a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .para{
+    margin-left: 10px;
+  }
+  img{
+    border-radius: 10px;
+    }

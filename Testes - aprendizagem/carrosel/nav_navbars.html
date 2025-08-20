@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nav & NavBars</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Barra de navegação com listas -->
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <!-- Barra de navegação com elemento nav -->
+
+    <nav class="nav nav-tabs" id="navBar" role="tablist">
+        <a href="#inicio" class="nav-link active" id="inicio-tab" data-bs-toggle="tab" role="tab" aria-controls="inicio" aria-selected="true">Inicio</a>
+        <a href="#sobre" class="nav-link" id="sobre-tab" data-bs-toggle="tab" role="tab" aria-controls="sobre" aria-selected="false">Sobre</a>
+        <a href="#contato" class="nav-link" id="contato-tab" data-bs-toggle="tab" role="tab" aria-controls="contato" aria-selected="false">Contato</a>
+        <a href="#" class="nav-link disabled">Desativar</a>
+    </nav>
+    <div class="tab-content" id="conteudo">
+        <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">Conteudo da aba Inicio</div>
+        <div class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">Conteudo da aba Sobre</div>
+        <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contato-tab">Conteudo da aba Contato</div>
+    </div>
+
+    <!-- Barras de Navegação-->
+    <!--
+        1 - navbar-brand realocar o logo ou nome do site
+        2 - navbar-nav obtem uma barra de navegação com suporte a dropdown
+        3 - navbar-toggler usada para chamar todos os plugins para a barra de navegação
+    -->
+
+    <br><br>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#senacnav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="senacnav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Organização de Eventos</a></li>
+                            <li><a href="#" class="dropdown-item">Aluguel de Enfeites</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>camadas</title>
+        <style type="text/css">
+            body{
+                padding: 0px;
+            }
+            .conteudo1{
+                border: 1px solid black;
+                background-color: blueviolet;
+                color: white;
+                font-size: 25px;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 3;/* 0 >*/
+                top: 50px;
+                left: 50px;
+            }
+            .conteudo2{
+                border: 1px solid black;
+                background-color: magenta;
+                font-size: 25px; 
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 2;
+                top: 25px;
+                left: 25px;
+            }
+            .conteudo3{
+                border: 1px solid black;
+                background-color: yellow;
+                font-size: 25px;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 1;
+                top: 0px;
+                left: 0px;
+            }
+
+
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="conteudo1">
+            conteudo1
+        </div>
+        <div class="conteudo2">
+            conteudo2
+        </div>
+        <div class="conteudo3">
+            conteudo3
+        </div>
+    </body>
+</html>

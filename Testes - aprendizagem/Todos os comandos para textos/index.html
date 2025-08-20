@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- Autor: Ageu e SIlva Rieger-->
+<html>
+    <!-- O que vai ser carregado primeiro no site -->
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Primeiro Site!</title>
+
+    
+    </head>
+
+    <!-- tipos de textos -->
+    <body>
+        
+        <h1>Titulo Um</h1><!--Muda o tamanho das palavras-->
+        <h2>Titulo Dois</h2>
+        <h3>Titulo Três</h3>
+        <h4>Titulo Quatro</h4>
+        <h5>Titulo Cinco</h5>
+        <h6>Titulo Seis</h6>
+
+        <hr><!-- adicionar uma linha horizontal-->
+        <br>
+        Titulo Um <br>
+        Titulo Dois <br>
+        Titulo Três <br>
+        Titulo Quatro <br>
+        Titulo Cinco <br>
+        Titulo Seis <br>
+        <br>
+        <hr>
+        <br>
+        <h2>Sobre o Site.</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus condimentum commodo. Aenean accumsan vulputate mattis.Aenean volutpat ligula at venenatis iaculis. Aenean malesuada molestie tincidunt. Sed molestie sapien condimentum dolor commodo vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ut justo justo.
+</p>
+<p>
+Aenean eget nibh mauris. Curabitur euismod placerat erat non posuere. Phasellus nec ante non velit aliquet euismod. Nullam in lobortis ante. Phasellus consequat mi metus, nec sodales sapien vulputate tempus. Proin consectetur imperdiet enim, sed efficitur mi ornare id. Vivamus velit erat, ultricies quis sagittis vel, ultrices eu nisi. Duis id auctor tortor, nec porta mauris. Curabitur egestas ullamcorper ex, eget laoreet enim vestibulum sed. Cras aliquam justo quis mattis cursus. Fusce dignissim et mi varius viverra. Pellentesque iaculis mauris at lectus consequat lobortis.
+</p>        
+<p>
+Praesent eget nulla sit amet nunc varius congue. Fusce facilisis diam at ante blandit sollicitudin. Mauris vitae viverra lacus. Mauris malesuada molestie placerat. Donec et pretium nisl, at malesuada nisi. Nam augue eros, cursus in dui in, cursus semper lorem. Nunc sit amet tempor enim, eget suscipit ante. Nulla facilisi. Nulla interdum, mi vel vestibulum blandit, tortor mi dapibus nibh, eget mollis dolor ex non tellus. Quisque ac maximus tortor, non ultrices dui. Curabitur accumsan, orci iaculis consequat blandit, lectus velit porta elit, et placerat dui tellus non elit.
+</p>
+<br>
+<strong>Esse é um texto em negrito!</strong><br>    
+<em>Esse é um texto em itálico!</em><br>
+<u>Este é um texto Sublinhado!</u><br>
+<strike> Esse é um texto Tachado</strike>
+
+
+<!-- Listas Ordenadas -->
+<!-- "ol" para criar uma lista, "li" em cada item da lista-->
+    <h3>Listas Ordenadas!</h3>
+    <ol type="1"> <!-- i = numeros romanos, 1 = numeros, A = letras-->
+        <li>Sergio</li>
+        <li>Joana</li>
+        <li>Jeniffer</li>
+        <li>Livia</li>
+    </ol>
+
+    <!--Listas não ordenadas-->
+    <h3>Listas não Ordenadas</h3>
+
+    <ul type="disc">  <!--circle = circulo com meio branco, esquare = quadrado fechado, disc = circulo fechado -->
+        <li>inicio</li>
+        <li>sobre o site</li>
+        <li>
+            serviços
+            <ul>
+                <li>Limpeza</li>
+                <li>portaria</li>
+                <li>segurança</li>
+            </ul>
+        </li>
+        <li>contato</li>
+
+    </ul>
+    <h3>Imagens</h3>
+    <!-- src = onde está localizada a imagem-->
+    
+    <img src="imagens/ferrari.jpg" width="300px" alt="">
+    <img src="skyline.jpg" width="400px">
+    <br>
+
+<!-- Links-->
+    <h3>Links!</h3> <!-- a = diretório de link-->
+    <a href="exercicioum.html">Exercicio Um</a>
+    <br> 
+    <a href="https://www.senacrs.com.br"target = "_blank">site do senac</a> <!-- 'target = "_blank" ' serve para abrir o link em uma nova guia -->
+
+    <h3>Tabelas!! </h3>
+    <table border="2">
+        <tr><!--criar linha-->
+            <td>Código do Produto</td> <!--Criar coluna-->
+            <td>Produto</td>
+            <td>Preço</td>       
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>notebook</td>
+            <td>R$ 3.500,00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Smartphone</td>
+            <td>R$ 2.200,00</td>
+        </tr>
+        <td rowspan="2"> <!--mescla linha-->
+            Pegue seus <br>
+            cupões de desconto</td>
+            <td colspan="2">CPO036</td>
+    
+        <tr>
+            <td colspan="3">OBS: Ofertas Válidas para esse fim de semana.</td> <!-- "colspan" mesclar coluna-->
+        </tr>
+    </table>
+    <!--Formulários-->
+    <h3>Formulários!</h3>
+    <form method="get" action="index.html">
+        <strong>Login:</strong><br>
+        Usuário:<br>
+        <input type="text" id="user" name="user">
+        <br>
+
+        Senha:<br>
+        <input type="password" id="senha" name="senha"> <!--escrever senha-->
+        <br><br>
+        <input type="submit" value="logar"> <!--confirma tudo que foi escrito-->
+        <input type="reset" value="limpar"> <!-- reset, Apaga tudo que tiver sido escrito-->
+
+    </form>
+
+    <form>
+        <h3>Cadastrar Novo Usuário</h3>
+        nome:<br>
+        <input type="text" name="nome" id="nome">
+        <br>
+        
+        email:<br>
+        <input type="email" name="email" id="email" >
+
+        <br>
+        telefone:<br>
+        <input type="tel" name="telefone" id="telefone">
+        
+        <br>
+        <br>idade:<br>
+        <input type="number" name="idade" id="idade">
+        <br>
+        sexo:<br>
+        <input type="radio" name="sexo" id="Masculino">Masculino<br>
+        <input type="radio" name="sexo" id="Feminino"> Feminino<br>
+        <input type="radio" name="sexo" id="outro"> Outros
+    
+        <br>
+        Interesses:<br>
+        <input type="checkbox" name="interesses" id="Filmes">Filmes<br>
+        <input type="checkbox" name="interesses" id="Futebol">Futebol<br>
+        <input type="checkbox" name="interesses" id="Música">Música<br>
+
+        <br>
+        Estado:<br>
+        <select name="estado" id="estado">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </select>
+
+        <br>
+        OBS:<br>
+        <textarea name="obs" id="obs"></textarea>
+    </form>
+    <h3>Caracteres Especiais</h3>
+    <table border="1" width="900">
+        <tr>
+            <td>Á - &Aacute;</td>
+            <td>á - &aacute;</td>
+            <td>À - &Agrave;</td>
+            <td>à - &agrave;</td>
+            <td>Â - &Acirc;</td>
+            <td>â - &acirc;</td>
+            <td>Ã - &Atilde;</td>
+            <td>ã - &atilde;</td>
+            <td>Ä - &Auml;</td>
+            <td>ä - &auml;</td>
+        </tr>
+        <tr>
+            <td>&Oslash;</td>
+            <td>&reg;</td>
+            <td>&copy;</td>
+            <td>&#178</td> <!--potencia-->
+            <td colspan="6">Ageu&nbsp;Rieger</td> <!--cada vez que repetir o código, será um espaço a mais-->
+
+
+
+        </tr>
+    </table>
+
+
+</body>
+    
+    
+</html><!--final do site, tudo que estiver fora dessa 
+        tag carregará depois de tudo -->
+
+        
+
+
+            
+
+

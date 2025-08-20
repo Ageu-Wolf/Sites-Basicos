@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Animações CSS</title>
+        <style type="text/css">
+
+            /*Define a animação*/
+            @keyframes animacaoA{
+                from{/*de - inicio da animação*/
+                    background-color: coral;
+                }
+                to{/*para - fim da animação*/
+                    background-color: deepskyblue;
+                }
+            }
+            @keyframes animacaoB{
+                0%{
+                    background-color: coral;
+                    left: 0px;
+                    top: 0px;
+                }
+                25%{
+                    background-color: blue;
+                    left: 200px;
+                    top: 0px;
+                }
+                50%{
+                    background-color: brown;
+                    left: 200px;
+                    top: 200px;
+                }
+                75%{
+                    background-color: chartreuse;
+                    left: 0px;
+                    top: 200px;
+                }
+                100%{
+                    background-color: coral;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+
+            html{
+                margin: 0px;
+                padding: 0px;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: coral;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                animation-name: animacaoB;
+                animation-duration: 5s;
+                animation-delay: 0s;
+                animation-iteration-count: 2;
+                animation-direction: alternate;/*A animação vai e volta, mas o animation-iteration precisa ser 2*/
+                /*animation-fill-mode: forwards;*/
+                /*tambem podemos escrever em uma linha*/
+                /*animation: animacaoA 5s 0s 2 alternate;/*nome da animação, duração, delay, quantas vezes vai carregar(iteration-count), animation-direction/ fill-mode*/
+                
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div></div>
+
+    </body>
+</html>

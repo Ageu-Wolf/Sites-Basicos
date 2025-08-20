@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Tag Div</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+           #topo{
+                background-color: rgb(143, 189, 185);
+           }
+           #conteudo{
+                background: rgb(109, 234, 142);/*cor de fundo*/
+                padding-top: 7px;/*margem interna*/
+                padding-bottom: 7px;
+            }
+            #rodape{
+                background: rgb(239, 169, 71);
+                justify-content: center;/*alinha conteudo, tudo que não for texto(div, imagem, ...)*/
+                text-align: center;/*alinha texto, centro*/
+            }
+            #produto{
+                background-color: gray;
+                margin: 7px;/*define uma margem externa para um elemento*/
+                height: 80px;/*define a altura*/
+                border-color: blueviolet;/*define a cor da borda*/
+                border-width: 5px; /*define o tamanho da borda*/
+                border-style: solid;/*define o estilo da borda*/
+            }
+        </style>
+    </head>
+    <body >
+        <div id="topo">
+            <img width="200px" height="150px">
+            <ul>
+                <li>inicio</li>
+                <li>serviços</li>
+                <li>Clientes</li>
+                <li>contato</li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <div id="produto">
+                serviços de limpeza!
+            </div>
+            <div id="produto">
+                serviços de jardinagem!
+            </div>
+            <div id="produto">
+                serviços de portaria!
+            </div>
+        </div>
+        <div id="rodape">
+            todos os direitos reservados.
+        </div>
+    </body>
+</html>

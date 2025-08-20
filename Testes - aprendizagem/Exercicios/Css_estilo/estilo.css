@@ -1,0 +1,22 @@
+/*
+    Autor Ageu e S. Rieger criado em 16/11/2022
+*/
+/*
+    Classe usada para formatar os paragrafos
+    da pagina formatacaocss.html
+*/
+/*@font-face{
+    font-family: 'Ageu senac';
+    src: url('ageu-senac.ttf') format('truetype');
+}*/
+.formatacao{
+    color: #005549;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;/*Formatação de negrito*/
+    font-style: italic; /*Formatação de itálico*/
+    text-decoration:underline ;/*Formatação Sublinhado*/
+    
+}
+
+/*==========================pagina formatacao.html ============================*/
