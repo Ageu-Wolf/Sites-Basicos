@@ -1,0 +1,97 @@
+*{
+    margin: 0;/*margem exerna*/
+    padding: 0; /*margem interna*/
+}
+body{
+    font-size: 1em;/*tamanho da fonte da letra*/
+    font-family:Helvetica, sans-serif;
+    background-color: #E6E6E6;
+}
+#area-cabecalho{
+    background-color: #F7B600;
+    padding: 15px;
+    text-align: center;
+}
+#area-logo{
+    padding: 10px;
+}
+#area-menu{
+    padding: 10px;
+}
+#area-conteudo{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#area-postagens{
+    width: 660px;
+    float: left;
+}
+#area-lateral{
+    width: 240px;
+    float: right;
+
+}
+#area-rodape{
+    text-align: center;
+    padding: 15px;
+    background-color: #CCCCCC;
+    clear: both;
+
+}
+.postagem{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+.conteudo-lateral{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px /*margem base/parte de baixo*/
+}
+.postagem-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px solid #CCCCCC; /*borda de baixo*/
+
+}
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #F6F6F6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+.titulo{
+    color: white;
+}
+h1{
+    color: #4E4E4E;
+    font-size: 2.5em;
+}
+h2{
+    color: #F7B600;
+}
+h3{
+    color: #565656;
+    background-color: #CCCCCC;
+    padding: 5px;
+}
+a{
+    text-decoration: none; /*retira o sublinhado*/
+    color: #F7B600;
+
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    color: #FFFFFF;
+    padding:8px 12px;
+
+}
+#area-cabecalho a:hover{
+    color: #F7B600;
+    background-color: white;
+    text-decoration: none;
+}
